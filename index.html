@@ -135,6 +135,72 @@
         width: 100%; /* Set one card in a row on even smaller screens */
       }
     }
+    .new-bar {
+  background-color: #95D5B2; /* Set your desired background color */
+  color: #1b1b1b; /* Set text color for better contrast */
+  padding: 10px;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.image-pair {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+
+  /* .image-text-container {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  } */
+  .side-image {
+    width: auto; /* Allow width to adjust based on aspect ratio */
+    height: 300px; /* Set a specific height */
+    margin-bottom: 10px;
+  }
+
+  .image-text-container {
+    width: 55%; /* Adjust width to maintain equal image sizes */
+    padding: 5px;
+    text-align: center;
+  }
+
+
+  
+
+  .side-text {
+    color: #333;
+  }
+  .image-container {
+      background-color: #ebf9ed; /* Set your desired background color */
+      padding: 20px; /* Adjust padding as needed */
+    }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .image-pair {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  footer {
+    background-color: #d8f3dc; /* Set background color for the footer */
+    color: #080808; /* Text color */
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer p {
+    margin-bottom: 5px;
+  }
+
+  footer a {
+    color: #0b0b0b; /* Color for the links */
+    text-decoration: underline; /* Underline the links */
+    margin: 0 10px;
+  }
+
 
   </style>
 </head>
@@ -261,7 +327,12 @@
 
   </div>
 
-  <!-- ... (remaining code) ... -->
+ 
+  
+  <div class="new-bar">
+    <!-- Content for the new bar -->
+    Student Support Services
+  </div>
 
   <script>
     function toggleSelected(card) {
@@ -269,5 +340,63 @@
     }
   </script>
 
+
+<div class="image-container">
+  <div class="image-pair">
+    <div class="image-text-container">
+      <img src="images/example.jpg" alt="Image 1" class="side-image">
+    </div>
+    <div class="image-text-container">
+      <img src="images/example2.jpg" alt="Image 2" class="side-image">
+    </div>
+  </div>
+
+  <div class="image-pair">
+    <div class="image-text-container">
+      <img src="images/example3.jpg" alt="Image 3" class="side-image">
+    </div>
+    <div class="image-text-container">
+      <img src="images/example4.jpg" alt="Image 4" class="side-image">
+    </div>
+  </div>
+
+  <div class="image-pair">
+    <div class="image-text-container">
+      <img src="images/example5.jpg" alt="Image 5" class="side-image">
+    </div>
+    <div class="image-text-container">
+      <img src="images/example6.jpg" alt="Image 6" class="side-image">
+    </div>
+  </div>
+
+  <div class="image-pair">
+    <div class="image-text-container">
+      <img src="images/example7.jpg" alt="Image 7" class="side-image">
+    </div>
+    <div class="image-text-container">
+      <img src="images/example8.jpg" alt="Image 8" class="side-image">
+    </div>
+  </div>
+</div>
+
+<footer>
+  <!-- Contact Us information as a link -->
+  <a href="#contact">Contact Us</a>
+  <p>Prasad V Potluri Siddhartha Institute Of Technology,<br>
+    Kanuru, Vijayawada-520 007, Andhra Pradesh, India</p>
+  <p>Tel: 0866-2581699, 0866-2583037, 0866-2585681, 0866-2585682<br>
+    Fax: 0866-2581184</p>
+  <p>Email: principal@pvpsiddhartha.ac.in</p>
+
+  <!-- Social Media Links -->
+  <div>
+    <a href="https://www.facebook.com/people/Prasad-V-Potluri-Siddhartha-Institute-of-Technology/100083459136132/">Facebook</a>
+    <a href="https://twitter.com/PVPsiddhartha">Twitter</a>
+    <a href="https://www.instagram.com/pvpsiddhartha/">Instagram</a>
+    <a href="https://www.linkedin.com/company/pvpsit/">Linkedin</a>
+    <a href="https://www.youtube.com/channel/UCCuJT9OE_acjW0Jk7Jf9Kvw/featured">YouTube</a>
+    <!-- Add more social media links if needed -->
+  </div>
+</footer>
 </body>
 </html>
